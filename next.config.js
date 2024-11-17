@@ -1,9 +1,14 @@
 ```javascript
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
+  async redirects() {
+    return [];
+  },
+  async headers() {
+    return [];
+  },
+  webpack(config) {
+    return config;
+  },
   reactStrictMode: true,
-  swcMinify: true,
 }
-
-module.exports = nextConfig
-```
+```​​​​​​​​​​​​​​​​
